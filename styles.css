@@ -20,8 +20,9 @@ body, html{
     text-align: center;
     border: 1px;
     border-width: 10px;
+    position: absolute;
+    inset: 0;
     margin: auto;
-    margin-top: 80px;
     box-shadow: rgba(98, 80, 80, 0.81) 0px 5px 15px;
     border-radius: 25px;
 }
@@ -124,15 +125,48 @@ p {
     margin: 10px;
 }
 
-/*--Phone Size--*/
+/*--For Computer Screen Below 1200px--*/
+@media (max-width:1100px){
+    #discord_menu img {
+        width: 340px;
+        height: auto;
+    }
+    
+    #discord_menu{
+        width: 340px;
+    }
 
+    #player {
+        width: 70%;
+        height: 40px;
+    }
+
+    h1{
+        color: black;
+        opacity: 0.8;
+        font-size: 24px;
+    }
+    
+    p {
+        color: beige;
+        font-size: 13px;
+    }
+    
+    #text {
+        color: white;
+        margin: 10px;
+        font-size: 13px;
+    }
+} 
+
+/*--Mobile Screen Mode--*/
 @media (max-width:800px){
     #discord_menu img {
-        width: 300px;
+        width: 270px;
         height: auto;
     }
     #discord_menu{
-        width: 300px;
+        width: 270px;
     }
     .btn {
         margin: auto;
