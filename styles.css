@@ -123,3 +123,49 @@ p {
     color: white;
     margin: 10px;
 }
+
+/*--Phone Size--*/
+
+@media (max-width:800px){
+    #discord_menu img {
+        width: 300px;
+        height: auto;
+    }
+    #discord_menu{
+        width: 300px;
+    }
+    .btn {
+        margin: auto;
+        border-radius: 42%;
+        padding: 5px 9px;
+        border: solid #e1e1e1 2px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        transform: scale(1.1) perspective(1px);
+    }
+    
+    #player {
+        width: 70%;
+        height: 40px;
+    }
+
+    h1{
+        color: black;
+        opacity: 0.8;
+        font-size: 20px;
+    }
+    
+    p {
+        color: beige;
+        font-size: 12px;
+    }
+    
+    #text {
+        color: white;
+        margin: 10px;
+        font-size: 10px;
+    }
+} 
