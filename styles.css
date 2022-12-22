@@ -13,6 +13,10 @@ body, html{
     margin: 0 auto;
 }
 
+.container{
+    margin : auto 10px;
+}
+
 #discord_menu {
     box-sizing: content-box;
     width: 408px;
@@ -37,7 +41,7 @@ body, html{
     border-radius: 42%;
     padding: 8px 12px;
     border: solid #e1e1e1 2px;
-    margin: 10px;
+    margin: 20px auto;
     cursor: pointer;
 }
 
@@ -45,14 +49,8 @@ body, html{
     transform: scale(1.1) perspective(1px);
 }
 
-.player {
-    width: 400px;
-    background-color: var(--bg);
-    position: relative;
-    display: grid;
-    grid-template-columns: 52px 1fr 52px;
-    grid-gap: 2px 55px;
-    border-radius: 64px;
+audio {
+    margin: 0 0;
 }
 
 .control, #current{
@@ -122,21 +120,27 @@ p {
 
 #text {
     color: white;
-    margin: 10px;
+    margin: 10px 10px;
+    font-size: 15px;
 }
 
-/*--For Computer Screen Below 1200px--*/
-@media (max-width:1100px){
+/*--For Computer Screen Below 1366px--*/
+@media (max-width:1366px){
     #discord_menu img {
-        width: 340px;
+        width: 380px;
         height: auto;
     }
     
     #discord_menu{
-        width: 340px;
+        width: 380px;
+        height: 550px;
     }
 
-    #player {
+    .btn {
+        padding: 7px 10px;
+    }
+
+    audio {
         width: 70%;
         height: 40px;
     }
@@ -144,46 +148,43 @@ p {
     h1{
         color: black;
         opacity: 0.8;
-        font-size: 24px;
+        font-size: 20px;
     }
     
     p {
         color: beige;
-        font-size: 13px;
+        font-size: 11px;
     }
     
     #text {
         color: white;
         margin: 10px;
-        font-size: 13px;
+        font-size: 11px;
     }
-} 
+}
+
+/*--End--*/
 
 /*--Mobile Screen Mode--*/
 @media (max-width:800px){
     #discord_menu img {
-        width: 270px;
+        width: 300px;
         height: auto;
     }
     #discord_menu{
-        width: 270px;
+        width: 300px;
+        height: 480px;
     }
     .btn {
-        margin: auto;
-        border-radius: 42%;
         padding: 5px 9px;
-        border: solid #e1e1e1 2px;
-        margin: 10px;
-        cursor: pointer;
     }
     
     .btn:hover {
         transform: scale(1.1) perspective(1px);
     }
     
-    #player {
-        width: 70%;
-        height: 40px;
+    audio {
+        height: 30px;
     }
 
     h1{
