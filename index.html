@@ -31,7 +31,10 @@
         </div>
 
         <!-- Audio -->
-        <audio src="nowind.mp3" autoplay controls></audio>
+        <audio id="player" src="nowind.mp3" loop></audio>
+        <section class="button-container">
+            <div><button onclick="document.getElementById('player').play()"><i>Background Music</i></button></div>
+        </section>
 
         <!-- P Text --> <!-- Do Not Delete -->
         <div id="text">
